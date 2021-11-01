@@ -14,7 +14,7 @@ void test_area(){
     float area2 = triArea(P[0], P[1], P[1]);
     float area3 = triArea(P[1], P[1], P[1]);
 
-    TEST_CHECK(fabs(area0-4.4559) < EPS);
+    TEST_CHECK(fabs(area0+4.4559) < EPS);
     TEST_CHECK(area1 == -area0);
     TEST_CHECK(area2 == 0);
     TEST_CHECK(area3 == 0);
