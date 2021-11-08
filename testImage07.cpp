@@ -10,7 +10,7 @@ float F(float x, float y, float t){
 	vec2 c0 = {100, 100};
 	vec2 c1 = {400, 500};
 	vec2 c = lerp(t, c0, c1);
-	return 50 - G(x, y, c.x, c.y, 50) - G(x, y, 350, 220, 120);
+	return 50 - G(x, y, c(0), c(1), 50) - G(x, y, 350, 220, 120);
 }
 
 int main(){
