@@ -2,7 +2,7 @@
 #include "bezier.h"
 
 int main(){
-	Rectangle R = {100, 200, 500, 400};
+	ClipRectangle R = {100, 200, 500, 400};
 
 	std::vector<Vec2Col> P = {
 		{{26, 168}, red},

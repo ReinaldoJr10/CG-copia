@@ -1,7 +1,7 @@
 #include "Graphics2D.h"
 
 int main(){
-	Rectangle R = {100, 200, 500, 400};
+	ClipRectangle R = {100, 200, 500, 400};
 
 	std::vector<Vec2Col> P = {
 		Vec2Col{{175.11, 437.82}, red},
