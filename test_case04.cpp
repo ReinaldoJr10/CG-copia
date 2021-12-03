@@ -15,7 +15,7 @@ bool close_points(vec2 u, vec2 v){
 }
 
 void test_clip_line(){
-    Rectangle R = {8.67, 4.92, 22.31, 12.59};
+    ClipRectangle R = {8.67, 4.92, 22.31, 12.59};
     std::vector<Vec2Col> P = {
         {{6, 10},        red},
         {{11.55, 13.2},  green},
