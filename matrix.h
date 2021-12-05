@@ -62,8 +62,12 @@ struct Mat{
         return C;
     }
 
-    Mat<M,1> operator[](int j)const{
-        return get_column(j);
+    float& operator[](int j){
+        return v[j];
+    }
+    
+    float operator[](int j)const{
+        return v[j];
     }
 
     void set_column(const Mat<M,1>& C, int j){
@@ -112,21 +116,6 @@ struct Mat{
     friend float norm(const Mat& A){
         return sqrt(norm2(A));
     }
-    
-    friend Mat min(const Mat& A, const Mat& B){
-        Mat R;
-        for(int i = 0; i < M*N; i++)
-            R.v[i] = std::min(A.v[i], B.v[i]);
-        return R;
-    }
-    
-    friend Mat max(const Mat& A, const Mat& B){
-        Mat R;
-        for(int i = 0; i < M*N; i++)
-            R.v[i] = std::max(A.v[i], B.v[i]);
-        return R;
-    }
-    
 };
 
 using mat2 = Mat<2>;
