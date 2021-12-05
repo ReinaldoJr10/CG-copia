@@ -213,7 +213,7 @@ Mat<M> inverse(const Mat<M>& A){
 
     Mat<M> adjoint = transpose(cofactor_matrix(A));
 
-    return 1.0/det*adjoint;
+    return 1/det*adjoint;
 }
 
 inline mat4 toMat4(mat3 A){
