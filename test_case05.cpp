@@ -1,6 +1,10 @@
 #include "acutest.h"
 #include "transforms.h"
 
+#ifndef M_PI
+#define M_PI 3.14159265358979323846
+#endif
+
 bool close_matrices(mat4 A, mat4 B){
     return norm2(A - B) < 1e-5;
 }
